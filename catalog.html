@@ -2,18 +2,127 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Academy: Нёрдс</title>
+        <title>Дизайн-студия «Нёрдс»</title>
     </head>
     <body>
-        <header>
-
-        </header>
-        <main>
-
-        </main>
-        <footer>
-
-        </footer>
+      <header>
+        <a href="index.html">
+          <img src="/img/nerds-logo.svg" width="160px" height="66px" alt="Логотип дизайн-студии «Нёрдс»">
+        </a>
+        <nav>
+          <ul>
+              <li><a href="blank.html">Студия</a></li>
+              <li><a href="blank.html">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <a href="blank.html">Корзина</a>
+        </nav>
+      </header>
+      <main>
+      <h1>Магазин готовых шаблонов</h1>
+        <section>
+          <h2>Фильтр товаров</h2>
+          <form method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="setka" id="filter-adaptive" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="setka" id="filter-fixed" value="fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="setka" id="filter-rubber" value="rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                  <li>
+                      <input type="checkbox" name="slider" id="filter-slider" checked>
+                      <label for="filter-slider">Слайдер</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" name="blok-preimushestv" id="filter-blok-preimushestv">
+                      <label for="filter-blok-preimushestv">Блок преимуществ</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" name="novosti" id="filter-novosti" checked>
+                      <label for="filter-novosti">Новости</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" name="gallery" id="filter-gallery">
+                      <label for="filter-gallery">Галлерея</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" name="korzina" id="filter-korzina">
+                      <label for="filter-korzina">Корзина</label>
+                  </li>
+              </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+          </form>
+        </section>
+        <section>
+          <h2>Список готовых шаблонов</h2>
+        </section>
+        <section>
+          <!--Здесь будет карта-->
+          <p>Nёrds Design Studio</p>
+          <p>1191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8 <br>
+          <br>
+          тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <button type="button">Напишите нам</button>
+        </section>
+      </main>
+      <footer>
+        <section>
+          <h2>Мы в соцсетях</h2>
+          <ul>
+            <li>
+                <a href="#">Вконтакте</a>
+            </li>
+            <li>
+                <a href="#">Фейсбук</a>
+            </li>
+            <li>
+                <a href="#">Инстаграм</a>
+            </li>
+        </ul>
+        </section>
+        <section>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </section>
+      </footer>
+        <section>
+          <!--Здесь будет форма попап напишите нам-->
+          <h2>Напишите нам</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+              <label for="writeus-name">Ваше имя:</label>
+              <input id="writeus-name" type="text" placeholder="Имя Фамилия" name="name">
+            </p>
+            <p>
+              <label for="writeus-email">Ваш email:</label>
+              <input id="writeus-email" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="writeus-text">Текст письма:</label>
+              <input id="writeus-text" type="text" name="text" placeholder="В свободной форме">
+            </p>
+              <button type="submit">Отправить</button>
+          </form>
+          <button type="button">Закрыть</button>
+        </section>
+      </footer>
     </body>
 </html>
