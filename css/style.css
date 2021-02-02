@@ -1,45 +1,45 @@
 @font-face {
-  font-family: Roboto;
-  src: /* >local("Roboto"), local("Roboto-Regular")< */
-    url("fonts/roboto.woff") format(woff),
-    url("fonts/roboto.woff2") format(woff2);
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("/fonts/roboto.woff") format("woff"),
+    url("/fonts/roboto.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
-@font-face {
-  font-family: Roboto;
-  src: /* local("Roboto"), local("Roboto-Bold"), */
-    url("fonts/robotobold.woff") format(woff),
-    url("fonts/robotobold.woff2") format(woff2);
+ @font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Bold"),
+    url("/fonts/robotobold.woff") format("woff"),
+    url("/fonts/robotobold.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: Roboto;
-  src: /* local("Roboto"), local("Roboto-Medium"),*/
-    url("fonts/robotomedium.woff") format(woff),
-    url("fonts/robotomedium.woff2") format(woff2);
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Medium"),
+    url("/fonts/robotomedium.woff") format("woff"),
+    url("/fonts/robotomedium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
-/*
+
 main {
 }
 
 footer {
 }
-*/
+
 .page {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   color: #000000;
 }
 
 .page-body {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   margin: 0;
