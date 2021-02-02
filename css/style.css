@@ -1,0 +1,228 @@
+@font-face {
+  font-family: Roboto;
+  src: /* >local("Roboto"), local("Roboto-Regular")< */
+    url("fonts/roboto.woff") format(woff),
+    url("fonts/roboto.woff2") format(woff2);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: /* local("Roboto"), local("Roboto-Bold"), */
+    url("fonts/robotobold.woff") format(woff),
+    url("fonts/robotobold.woff2") format(woff2);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: /* local("Roboto"), local("Roboto-Medium"),*/
+    url("fonts/robotomedium.woff") format(woff),
+    url("fonts/robotomedium.woff2") format(woff2);
+  font-style: normal;
+  font-weight: 500;
+}
+/*
+main {
+}
+
+footer {
+}
+*/
+.page {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.page-body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  color: #000000;
+}
+
+.main-header {
+  background-color: #eeeeee;
+  padding-top: 49px;
+}
+
+.main-logo {
+  background-color: #eeeeee;
+  padding-bottom: 0;
+}
+
+.navigate {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.navigate-list {
+  padding-left: 0;
+}
+
+.navigate-item {
+  list-style-type: none;
+}
+
+.slide {
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.advantages {
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+.advantages h3 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.features {
+}
+
+.features h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.features-list {
+  padding-left: 0;
+}
+
+.feature-item {
+  list-style-type: none;
+}
+
+.slogan {
+  font-size: 45px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.plus-list {
+  padding-left: 0;
+}
+
+.plus-item {
+  list-style-type: none;
+}
+
+.quality-list {
+  padding-left: 0;
+}
+
+.quality-item {
+  list-style-type: none;
+}
+
+.friends-list {
+
+}
+
+.friend-item {
+  list-style-type: none;
+}
+
+.text-16 {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.button {
+}
+
+.button-learn-more {
+}
+
+.button-site {
+}
+
+.button-order {
+}
+
+.button-presentations {
+}
+
+.button-write-us {
+}
+
+.button-submit {
+}
+
+.about-us {
+}
+
+.about-us h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.popup {
+}
+
+.popup-form {
+}
+
+.popup-item {
+}
+
+.main-footer {
+}
+
+.footer-social {
+}
+
+.text-footer-friendship {
+  font-size: 36px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.text-footer-discount {
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #444444;
+}
+
+.contacts {
+}
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.contacts-map {
+  background-image: url("/img/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat-x;
+  height: 416px;
+}
+
