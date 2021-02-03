@@ -58,7 +58,7 @@
       </header>
       <section class="advantages">
         <div class="container">
-          <h2>Преимущества</h2>
+          <h2 class="hidden">Преимущества</h2>
           <h3>
             Долго, дорого,<br />
             скурпулезно
@@ -75,17 +75,17 @@
               alt="слайд1"
             />
           </div>
-          <a class="button button-learn-more" href="blank.html"
+          <a class="button button--primary" href="blank.html"
             >Узнать больше</a
           >
         </div>
       </section>
     </div>
     <main>
-      <div class="container"><h1>Дизайн-студия «Нёрдс»</h1></div>
+      <div class="container"><h1 class="hidden">Дизайн-студия «Нёрдс»</h1></div>
       <section class="features">
         <div class="container">
-          <h2>Мы делаем</h2>
+          <h2 class="hidden">Мы делаем</h2>
           <ul class="features-list">
             <li class="feature-item">
               <h3>Веб-сайты</h3>
@@ -101,7 +101,7 @@
                 Мир никогда не будет прежним<br />
                 после того как вы увидите ваш сайт
               </p>
-              <a class="button button-site" href="blank.html">Заказать</a>
+              <a class="button button--primary" href="blank.html">Заказать</a>
             </li>
             <li class="feature-item">
               <h3>Приложения</h3>
@@ -117,7 +117,7 @@
                 Покорите топ-10 приложений<br />
                 в AppStore и Google Play
               </p>
-              <a class="button button-order" href="blank.html">Заказать</a>
+              <a class="button button--primary" href="blank.html">Заказать</a>
             </li>
             <li class="feature-item">
               <h3>Презентации</h3>
@@ -133,7 +133,7 @@
                 Вы даже не подозреваете,<br />
                 насколько вы изумительны!
               </p>
-              <a class="button button-presentations" href="blank.html"
+              <a class="button button--primary" href="blank.html"
                 >Заказать</a
               >
             </li>
@@ -142,7 +142,7 @@
       </section>
       <section class="about-us">
         <div class="container">
-          <h2>Немного про нас</h2>
+          <h2 class="hidden">Немного про нас</h2>
           <p class="slogan">
             Мы - маленькая, но гордая<br />
             дизайн-студия из Краснодара.
@@ -193,7 +193,7 @@
       </section>
       <section>
         <div class="container">
-          <h2>Наши друзья</h2>
+          <h2 class="hidden">Наши друзья</h2>
           <ul class="friends-list">
             <li class="friend-item">
               <a href="https://htmlacademy.ru/">
@@ -230,25 +230,23 @@
             ул. Б. Конюшенная, д. 19/8 <br />
           </address>
           <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <button type="button" class="button-write-us">Напишите нам</button>
+          <button type="button" class="button button--primary">Напишите нам</button>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <section class="footer-social">
-        <h2>Мы в соцсетях</h2>
-        <ul>
-          <li>
-            <a href="#"><img src="/img/icons/vk-icon.svg" alt="vk" /></a>
+        <h2 class="hidden">Мы в соцсетях</h2>
+        <ul class="social-list">
+          <li class="social-icon social-icon--vk">
+            <a href="#"></a>
           </li>
-          <li>
-            <a href="#"><img src="/img/icons/fb-icon.svg" alt="fb" /></a>
+          <li class="social-icon social-icon--fb">
+            <a href="#"></a>
           </li>
-          <li>
-            <a href="#"
-              ><img src="/img/icons/insta-icon.svg" alt="instagram"
-            /></a>
+          <li class="social-icon social-icon--insta">
+            <a href="#"></a>
           </li>
         </ul>
       </section>
@@ -261,7 +259,7 @@
     </footer>
     <section class="popup">
       <!--Здесь будет форма попап напишите нам-->
-      <h2>Напишите нам</h2>
+      <h2 class="popup-name">Напишите нам</h2>
       <form
         class="popup-form"
         action="https://echo.htmlacademy.ru"
@@ -294,9 +292,9 @@
             placeholder="В свободной форме"
           />
         </div>
-        <button type="submit" class="submit">Отправить</button>
+        <button type="submit" class="button button--primary submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button type="button" class="close"></button>
     </section>
   </body>
 </html>
