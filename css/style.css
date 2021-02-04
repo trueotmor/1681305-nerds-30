@@ -122,12 +122,12 @@
 }
 
 .main-header {
-  background-color: #eeeeee;
+  background-color: var(--dimgray-basic);
   padding-top: 49px;
 }
 
 .main-logo {
-  background-color: #eeeeee;
+  background-color: var(--dimgray-basic);
   padding-bottom: 0;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .advantages {
-  background-color: var(--white-basic);
+  background-color: var(--dimgray-basic);
   margin: 0;
 }
 
