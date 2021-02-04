@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Regular"),
-    url("/fonts/roboto.woff") format("woff"),
-    url("/fonts/roboto.woff2") format("woff2");
+    url("../fonts/roboto.woff") format("woff"),
+    url("../fonts/roboto.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -10,8 +10,8 @@
  @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Bold"),
-    url("/fonts/robotobold.woff") format("woff"),
-    url("/fonts/robotobold.woff2") format("woff2");
+    url("../fonts/robotobold.woff") format("woff"),
+    url("../fonts/robotobold.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
 }
@@ -19,18 +19,65 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Medium"),
-    url("/fonts/robotomedium.woff") format("woff"),
-    url("/fonts/robotomedium.woff2") format("woff2");
+    url("../fonts/robotomedium.woff") format("woff"),
+    url("../fonts/robotomedium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 
+:root {
+  /*цвета с макета*/
+  --black-basic: #000000;
+  --white-basic: #ffffff;
+  --light-gray-basic: #e1e1e1;
+  --border-gray-basic: #D7DCDE;
+  --border-gray-hover: #b4b9bb;
+  --gray-basic: #a6a6a6;
+  --dimgray-basic: #eeeeee;
+  --dimgray-hover: #dfdfdf;
+  --dimgray-active: #d5d5d5;
+  --dimgray-select: #dbdbdb;
+  --dark-gray: #666666;
+  --very-dark-gray: #4d4d4d;
+  --wery-dark-gray: #444444;
+  --red-basic: #FB565A;
+  --red-hover: #E74246;
+  --red-active: #D7373B;
+  --green-basic: #00ca74;
+  --green-hover: #00bc6c;
+  --green-active: #00AA62;
+  --yellow-basic: #EFC84A;
+  --yellow-hover: #EAB534;
+  --yellow-active: #E5A722;
+  /*шрифты*/
+  --font-size-basic: 16px;
+  --font-size-medium: 18px;
+  --font-size-large: 24px;
+  --font-size-very-large: 36px;
+  --font-size-big: 45px;
+  --font-size-very-big: 55px;
+  /*интервал*/
+  --line-height-basic: 18px;
+  --line-height-medium: 22px;
+  --line-height-large: 24px;
+  --line-height-very-large: 30px;
+  --line-height-wery-large: 36px;
+  --line-height-big: 45px;
+  --line-height-bigger: 53px;
+  --line-height-very-big: 55px;
+  --line-height-wery-big: 64px;
+  /*вес*/
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
 .button {
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
+  color: var(--white-basic);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-basic);
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -43,13 +90,13 @@
 }
 
 .button--primary {
-  background-color: #FB565A;
+  background-color: var(--red-basic);
   border: none;
 }
 
 .text-16 {
-  line-height: 24px;
-  font-size: 16px;
+  line-height: var(--line-height-large);
+  font-size: var(--font-size-basic);
 }
 
 .hidden {
@@ -59,25 +106,19 @@
   height: 0;
 }
 
-main {
-}
-
-footer {
-}
-
 .page {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  color: #000000;
+  font-weight: var(--font-weight-normal);
+  color: var(--black-basic);
 }
 
 .page-body {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   margin: 0;
-  color: #000000;
+  color: var(--black-basic);
 }
 
 .main-header {
@@ -91,9 +132,9 @@ footer {
 }
 
 .navigate {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-very-large);
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -110,7 +151,7 @@ footer {
 
 .navigate a {
   text-decoration: none;
-  color: #000;
+  color: var(--black-basic);
 }
 
 .slide {
@@ -122,24 +163,24 @@ footer {
 }
 
 .advantages {
-  background-color: #eeeeee;
+  background-color: var(--white-basic);
   margin: 0;
 }
 
 .advantages h3 {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-very-big);
+  line-height: var(--line-height-very-big);
+  color: var(--black-basic);
 }
 
 .features {
 }
 
 .features h3 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-very-large);
   text-transform: uppercase;
 }
 
@@ -152,16 +193,16 @@ footer {
 }
 
 .feature-item:nth-child(2) .button {
-  background-color: #00CA74;
+  background-color: var(--green-basic);
 }
 
 .feature-item:nth-child(3) .button {
-  background-color: #EFC849;
+  background-color: var(--yellow-basic);
 }
 
 .slogan {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: var(--font-size-big);
+  line-height: var(--line-height-big);
   display: flex;
   align-items: center;
 }
@@ -190,17 +231,13 @@ footer {
   list-style-type: none;
 }
 
-
-
-
-
 .about-us {
 }
 
 .about-us h3 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-large);
   text-transform: uppercase;
 }
 
@@ -208,38 +245,38 @@ footer {
 }
 
 .contacts h3 {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-very-large);
   display: flex;
   align-items: center;
   text-transform: uppercase;
 }
 
 .contacts address{
-  font-size: 16px;
-  line-height: 18px;
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-basic);
   font-style: normal;
   display: flex;
   align-items: center;
-  color: #666666;
+  color: var(--dark-gray);
 }
 
 .contacts p {
   text-decoration: none;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-basic);
   display: flex;
   align-items: center;
-  color: #666666;
+  color: var(--dark-gray);
 }
 
 .contacts a {
   text-decoration: none;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-basic);
   display: flex;
   align-items: center;
-  color: #666666;
+  color: var(--dark-gray);
 }
 
 .contacts-map {
@@ -271,7 +308,7 @@ footer {
   width: 78px;
   height: 78px;
   border-radius: 50%;
-  background-color: #E1E1E1;
+  background-color: var(--light-gray-basic);
   text-align: center;
   display: block;
   background-repeat: no-repeat;
@@ -291,36 +328,37 @@ footer {
 }
 
 .text-footer-friendship {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: var(--font-size-very-large);
+  line-height: var(--line-height-wery-large);
+  font-weight: var(--font-weight-bold);
   display: flex;
   align-items: center;
 }
 
 .text-footer-discount {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-medium);
   display: flex;
   align-items: center;
-  color: #444444;
+  color: var(--wery-dark-gray);
 }
 
 .popup {
 }
 
 .popup-name {
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 53px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-big);
+  line-height: var(--line-height-bigger);
 }
 
 .popup-form {
 }
 
 .popup-item {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-basic);
 }
 
 .submit {
