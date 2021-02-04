@@ -280,7 +280,7 @@
 }
 
 .contacts-map {
-  background-image: url("/img/map.jpg");
+  background-image: url("../img/map.jpg");
   background-position: 50% 50%;
   background-repeat: repeat-x;
   height: 416px;
@@ -316,15 +316,15 @@
 }
 
 .social-icon--vk a{
-  background-image: url("/img/icons/vk-icon.svg");
+  background-image: url("../img/icons/vk-icon.svg");
 }
 
 .social-icon--fb a{
-  background-image: url("/img/icons/fb-icon.svg");
+  background-image: url("../img/icons/fb-icon.svg");
 }
 
 .social-icon--insta a{
-  background-image: url("/img/icons/insta-icon.svg");
+  background-image: url("../img/icons/insta-icon.svg");
 }
 
 .text-footer-friendship {
@@ -366,7 +366,7 @@
 }
 
 .close {
-  background-image: url("/img/close-cross.svg");
+  background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
