@@ -184,6 +184,15 @@
   text-transform: uppercase;
 }
 
+.main-header h3 {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-very-big);
+  line-height: var(--line-height-very-big);
+  color: var(--black-basic);
+  text-align: center;
+  padding-bottom: 108px;
+}
+
 .features-list {
   padding-left: 0;
 }

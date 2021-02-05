@@ -3,56 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <title>Дизайн-студия «Нёрдс»</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <link rel="stylesheet" href="css/style.css" />
-  <body>
+  <body class="page-body">
     <div>
-      <header>
-        <a href="index.html">
-          <img
-            class="main-logo"
-            src="/img/nerds-logo.svg"
-            width="160px"
-            height="66px"
-            alt="Логотип дизайн-студии «Нёрдс»"
-          />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-          <a href="blank.html">Корзина</a>
-        </nav>
+      <header class="main-header">
+        <div class="container">
+          <a class="main-logo" href="index.html">
+            <img
+              src="img/nerds-logo.svg"
+              width="160px"
+              height="66px"
+              alt="Логотип дизайн-студии «Нёрдс»"
+            />
+          </a>
+          <nav class="navigate">
+            <ul class="navigate-list">
+              <li class="navigate-item"><a href="blank.html">Студия</a></li>
+              <li class="navigate-item"><a href="blank.html">Клиенты</a></li>
+              <li class="navigate-item"><a href="catalog.html">Магазин</a></li>
+              <li class="navigate-item"><a href="blank.html">Контакты</a></li>
+            </ul>
+            <a href="blank.html">Корзина</a>
+          </nav>
+          <h3>
+            Магазин готовых шаблонов
+          </h3>
+        </div>
       </header>
-    </div>
     <main>
       <!--Какая то страница-->
     </main>
 
-    <footer>
-      <section>
-        <h2>Мы в соцсетях</h2>
-        <ul>
-          <li>
-            <a href="#">Вконтакте</a>
+    <footer class="main-footer container">
+      <section class="footer-social">
+        <h2 class="hidden">Мы в соцсетях</h2>
+        <ul class="social-list">
+          <li class="social-icon social-icon--vk">
+            <a href="#"></a>
           </li>
-          <li>
-            <a href="#">Фейсбук</a>
+          <li class="social-icon social-icon--fb">
+            <a href="#"></a>
           </li>
-          <li>
-            <a href="#">Инстаграм</a>
+          <li class="social-icon social-icon--insta">
+            <a href="#"></a>
           </li>
         </ul>
       </section>
       <section>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <p class="text-footer-friendship">Давайте дружить, это выгодно!</p>
+        <p class="text-footer-discount">
+          Скидка 10% для друзей из социальных сетей
+        </p>
       </section>
     </footer>
-    <form action=""></form>
-    <!--Здесь будет форма попап напишите нам-->
   </body>
 </html>
