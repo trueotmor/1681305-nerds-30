@@ -7,7 +7,7 @@
   font-weight: normal;
 }
 
- @font-face {
+@font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Bold"),
     url("../fonts/robotobold.woff") format("woff"),
@@ -30,7 +30,7 @@
   --black-basic: #000000;
   --white-basic: #ffffff;
   --light-gray-basic: #e1e1e1;
-  --border-gray-basic: #D7DCDE;
+  --border-gray-basic: #d7dcde;
   --border-gray-hover: #b4b9bb;
   --gray-basic: #a6a6a6;
   --dimgray-basic: #eeeeee;
@@ -40,15 +40,15 @@
   --dark-gray: #666666;
   --very-dark-gray: #4d4d4d;
   --wery-dark-gray: #444444;
-  --red-basic: #FB565A;
-  --red-hover: #E74246;
-  --red-active: #D7373B;
+  --red-basic: #fb565a;
+  --red-hover: #e74246;
+  --red-active: #d7373b;
   --green-basic: #00ca74;
   --green-hover: #00bc6c;
-  --green-active: #00AA62;
-  --yellow-basic: #EFC84A;
-  --yellow-hover: #EAB534;
-  --yellow-active: #E5A722;
+  --green-active: #00aa62;
+  --yellow-basic: #efc84a;
+  --yellow-hover: #eab534;
+  --yellow-active: #e5a722;
   /*шрифты*/
   --font-size-small: 14px;
   --font-size-basic: 16px;
@@ -149,7 +149,6 @@
 
 .navigate-item {
   list-style-type: none;
-
 }
 
 .navigate a {
@@ -157,7 +156,8 @@
   color: var(--black-basic);
 }
 
-.slide {
+.slide img {
+  vertical-align: top;
 }
 
 .container {
@@ -168,6 +168,11 @@
 .advantages {
   background-color: var(--dimgray-basic);
   margin: 0;
+}
+
+.advantages .container {
+  display: grid;
+  grid-template-columns: auto max-content;
 }
 
 .advantages h3 {
@@ -197,7 +202,10 @@
 }
 
 .features-list {
-  padding-left: 0;
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  column-gap: 100px;
 }
 
 .feature-item {
@@ -236,14 +244,17 @@
 }
 
 .friends-list {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .friend-item {
   list-style-type: none;
 }
 
-.about-us {
+.about-us .container {
+  display: grid;
+  grid-template-columns: auto min-content;
 }
 
 .about-us h3 {
@@ -264,7 +275,7 @@
   text-transform: uppercase;
 }
 
-.contacts address{
+.contacts address {
   font-size: var(--font-size-basic);
   line-height: var(--line-height-basic);
   font-style: normal;
@@ -299,21 +310,30 @@
 }
 
 .main-footer {
+  min-height: 217px;
+  display: flex;
 }
 
 .footer-social {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer-text {
+  text-align: center;
+  vertical-align: middle;
 }
 
 .social-list {
   list-style-type: none;
   font-size: 0;
   margin: -6px;
+  padding: 0;
 }
 
 .social-icon {
   display: inline-block;
   margin: 6px;
-
 }
 
 .social-icon a {
@@ -327,15 +347,15 @@
   background-position: 50%;
 }
 
-.social-icon--vk a{
+.social-icon--vk a {
   background-image: url("../img/icons/vk-icon.svg");
 }
 
-.social-icon--fb a{
+.social-icon--fb a {
   background-image: url("../img/icons/fb-icon.svg");
 }
 
-.social-icon--insta a{
+.social-icon--insta a {
   background-image: url("../img/icons/insta-icon.svg");
 }
 
@@ -374,7 +394,6 @@
 }
 
 .submit {
-
 }
 
 .close {
@@ -388,7 +407,6 @@
 }
 
 .filters {
-
 }
 
 .type-catalog-filter {
@@ -407,7 +425,6 @@
 }
 
 .sort-item {
-
 }
 
 .rate {
@@ -423,7 +440,6 @@
 }
 
 .grid-item {
-
 }
 
 .filter-features {
@@ -434,7 +450,6 @@
 }
 
 .catalog-filter {
-
 }
 
 .filter-button {
@@ -445,22 +460,33 @@
 
 .template-list {
   list-style-type: none;
-
+  padding: 0;
+  display: inline-block;
 }
 
 .template-item {
-  text-align: center;
+  position: relative;
 }
 
 .template-item-info {
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
-  padding: 26px 80px 44px;
+  padding: 26px 0px 44px;
   position: absolute;
+  background-color: var(--dimgray-basic);
+  bottom: 0px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.template-item:hover .template-item-info {
+  opacity: 1;
+  visibility: visible;
 }
 
 .template-item h3 {
   text-transform: uppercase;
-
 }
 
 .template-item p {
@@ -469,24 +495,19 @@
   line-height: var(--line-height-basic);
 }
 
-
-
 .button-template {
-  width: 100%;
+  width: 200px;
 }
 
 .catalog-page-list {
   list-style-type: none;
   display: inline-flex;
-
 }
 
 .catalog-page {
-
 }
 
 .catalog-next-page {
-
 }
 
 .button-catalog-page {
@@ -500,10 +521,7 @@
   color: var(--black-basic);
   margin: 6px;
   background-color: var(--dimgray-basic);
-
 }
-
-
 
 /* .button {
   text-decoration: none;
@@ -526,4 +544,3 @@
   background-color: var(--red-basic);
   border: none;
 } */
-
