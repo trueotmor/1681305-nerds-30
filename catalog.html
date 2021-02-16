@@ -34,51 +34,51 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body class="page-body">
-        <header class="main-header">
-          <div class="container">
-            <a class="main-logo" href="index.html">
-              <img
-                src="img/nerds-logo.svg"
-                width="160px"
-                height="66px"
-                alt="Логотип дизайн-студии «Нёрдс»"
-              />
-            </a>
-            <nav class="navigate">
-              <ul class="navigate-list">
-                <li class="navigate-item"><a href="blank.html">Студия</a></li>
-                <li class="navigate-item"><a href="blank.html">Клиенты</a></li>
-                <li class="navigate-item"><a href="catalog.html">Магазин</a></li>
-                <li class="navigate-item"><a href="blank.html">Контакты</a></li>
-              </ul>
-              <a href="blank.html">Корзина</a>
-            </nav>
-            <h3>
-              Магазин готовых шаблонов
-            </h3>
-          </div>
-        </header>
-      <main>
-        <section class="filters">
-          <div class="container">
-          <h2 class="hidden">Фильтр товаров</h2>
-          <fieldset>
-            <legend class="type-catalog-filter">Сортировать:</legend>
-            <ul class="sort-list">
-              <li class="sort-item">
-                <input type="radio" name="sort" id="sort-price" value="by-price" checked>
-                <label for="sort-price">По цене</label>
-              </li>
-              <li class="sort-item">
-                <input type="radio" name="sort" id="sort-type" value="by-type">
-                <label for="sort-type">По типу</label>
-              </li>
-              <li class="sort-item">
-                <input type="radio" name="sort" id="sort-name" value="by-name">
-                <label for="sort-name">По названию</label>
-              </li>
+      <header class="main-header">
+        <div class="container">
+          <a class="main-logo" href="index.html">
+            <img
+              src="img/nerds-logo.svg"
+              width="160px"
+              height="66px"
+              alt="Логотип дизайн-студии «Нёрдс»"
+            />
+          </a>
+          <nav class="navigate">
+            <ul class="navigate-list">
+              <li class="navigate-item"><a href="blank.html">Студия</a></li>
+              <li class="navigate-item"><a href="blank.html">Клиенты</a></li>
+              <li class="navigate-item"><a href="catalog.html">Магазин</a></li>
+              <li class="navigate-item"><a href="blank.html">Контакты</a></li>
             </ul>
-          </fieldset>
+            <a href="blank.html">Корзина</a>
+          </nav>
+          <h3>
+            Магазин готовых шаблонов
+          </h3>
+        </div>
+      </header>
+      <main>
+      <section class="container content-catalog">
+        <section class="type-filter">
+          <h2 class="hidden">Фильтр товаров</h2>
+            <fieldset>
+              <legend class="type-catalog-filter">Сортировать:</legend>
+              <ul class="sort-list">
+                <li class="sort-item">
+                  <input type="radio" name="sort" id="sort-price" value="by-price" checked>
+                  <label for="sort-price">По цене</label>
+                </li>
+                <li class="sort-item">
+                  <input type="radio" name="sort" id="sort-type" value="by-type">
+                  <label for="sort-type">По типу</label>
+                </li>
+                <li class="sort-item">
+                  <input type="radio" name="sort" id="sort-name" value="by-name">
+                  <label for="sort-name">По названию</label>
+                </li>
+              </ul>
+            </fieldset>
           <fieldset>
             <ul class="rate">
               <li>
@@ -91,7 +91,9 @@
               </li>
             </ul>
           </fieldset>
-          <form method="GET" action="https://echo.htmlacademy.ru" class="catalog-filter">
+        </section>
+        <section class="catalog-filter">
+          <form method="GET" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend class="type-catalog-filter">Стоимость:</legend>
               <!--Здесь будет возможность выбрать стоимoсть-->
@@ -140,12 +142,11 @@
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
           </form>
-          </div>
         </section>
-        <section>
+        <section class="catalog-templates">
           <h2 class="hidden">Список готовых шаблонов</h2>
           <!-- Здесь будет реализована возможность сортировки результата фильтра товаров?-->
-            <div class="container">
+
               <ul class="template-list">
                 <li class="template-item">
                   <div class="template-item-info">
@@ -209,7 +210,8 @@
                   </a>
                 </li>
               </ul>
-
+        </section>
+        <section class="catalog-pagination">
               <ul class="catalog-page-list">
                 <li class="catalog-page">
                   <a class="button button--primary button-catalog-page">1</a>
@@ -224,49 +226,48 @@
                   <a href="#" class="button button--primary button-catalog-page-next">Следующая</a>
                 </li>
               </ul>
-            </div>
         </section>
+      </section>
+      <section class="contacts">
+        <div class="contacts-map">
+          <!--Здесь будет карта-->
+        </div>
 
-        <section class="contacts">
-          <div class="contacts-map">
-            <!--Здесь будет карта-->
-          </div>
-
-          <div class="container">
-            <h3>Nёrds Design Studio</h3>
-            <address>
-              1191186, Санкт-Петербург,<br />
-              ул. Б. Конюшенная, д. 19/8 <br />
-            </address>
-            <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-            <button type="button" class="button button--primary">
-              Напишите нам
-            </button>
-          </div>
+        <div class="container">
+          <h3>Nёrds Design Studio</h3>
+          <address>
+            1191186, Санкт-Петербург,<br />
+            ул. Б. Конюшенная, д. 19/8 <br />
+          </address>
+          <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <button type="button" class="button button--primary">
+            Напишите нам
+          </button>
+        </div>
+      </section>
+      </main>
+      <footer class="main-footer container">
+        <section class="footer-social">
+          <h2 class="hidden">Мы в соцсетях</h2>
+          <ul class="social-list">
+            <li class="social-icon social-icon--vk">
+              <a href="#"></a>
+            </li>
+            <li class="social-icon social-icon--fb">
+              <a href="#"></a>
+            </li>
+            <li class="social-icon social-icon--insta">
+              <a href="#"></a>
+            </li>
+          </ul>
         </section>
-        <footer class="main-footer container">
-          <section class="footer-social">
-            <h2 class="hidden">Мы в соцсетях</h2>
-            <ul class="social-list">
-              <li class="social-icon social-icon--vk">
-                <a href="#"></a>
-              </li>
-              <li class="social-icon social-icon--fb">
-                <a href="#"></a>
-              </li>
-              <li class="social-icon social-icon--insta">
-                <a href="#"></a>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <p class="text-footer-friendship">Давайте дружить, это выгодно!</p>
-            <p class="text-footer-discount">
-              Скидка 10% для друзей из социальных сетей
-            </p>
-          </section>
-        </main>
-        </footer>
+        <section>
+          <p class="text-footer-friendship">Давайте дружить, это выгодно!</p>
+          <p class="text-footer-discount">
+            Скидка 10% для друзей из социальных сетей
+          </p>
+        </section>
+      </footer>
         <section class="popup">
           <!--Здесь будет форма попап напишите нам-->
           <h2 class="popup-name">Напишите нам</h2>
