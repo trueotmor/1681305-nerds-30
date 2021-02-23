@@ -52,46 +52,49 @@
               <li class="navigate-item"><a href="catalog.html">Магазин</a></li>
               <li class="navigate-item"><a href="blank.html">Контакты</a></li>
             </ul>
-            <a href="blank.html">Корзина</a>
           </nav>
+          <a class="cart" href="blank.html">Корзина</a>
         </div>
       </header>
       <section class="advantages">
         <div class="container">
-          <div class="advantgers-column1">
-            <h2 class="hidden">Преимущества</h2>
-            <h3>
-              Долго, дорого,<br />
-              скурпулезно
-            </h3>
-            <p class="text-16">
-              Математически выверенный дизайн<br />
-              для вашего сайта или мобильного приложения.
-            </p>
-            <a class="button button--primary" href="blank.html"
-              >Узнать больше</a
-            >
-          </div>
-          <div class="slide advantages-column2">
-            <img
-              src="img/slide1.png"
-              width="760px"
-              height="431px"
-              alt="слайд1"
-            />
+          <div class="advantages-slider">
+            <div class="advantages-slide">
+              <div class="advantages-column1">
+                <h2 class="hidden">Преимущества</h2>
+                <h3>
+                  Долго, дорого,<br />
+                  скурпулезно
+                </h3>
+                <p class="text-16">
+                  Математически выверенный дизайн<br />
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <a class="button button--primary" href="blank.html"
+                  >Узнать больше</a
+                >
+              </div>
+              <div class="advantages-column2">
+                <img
+                  src="img/slide1.png"
+                  width="760px"
+                  height="431px"
+                  alt="слайд1"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
     <main>
-      <div class="container"><h1 class="hidden">Дизайн-студия «Нёрдс»</h1></div>
+      <h1 class="hidden">Дизайн-студия «Нёрдс»</h1>
       <section class="features">
         <div class="container">
           <h2 class="hidden">Мы делаем</h2>
           <ul class="features-list">
             <li class="feature-item">
-              <h3>Веб-сайты</h3>
-              <a href="blank.html">
+              <a class="feature-img" href="blank.html">
                 <img
                   src="img/illustration-11.png"
                   width="300px"
@@ -99,6 +102,7 @@
                   alt=""
                 />
               </a>
+              <h3>Веб-сайты</h3>
               <p class="text-16">
                 Мир никогда не будет прежним<br />
                 после того как вы увидите ваш сайт
@@ -106,8 +110,7 @@
               <a class="button button--primary" href="blank.html">Заказать</a>
             </li>
             <li class="feature-item">
-              <h3>Приложения</h3>
-              <a href="blank.html">
+              <a class="feature-img" href="blank.html">
                 <img
                   src="img/illustration-21.png"
                   width="300px"
@@ -115,6 +118,7 @@
                   alt=""
                 />
               </a>
+              <h3>Приложения</h3>
               <p class="text-16">
                 Покорите топ-10 приложений<br />
                 в AppStore и Google Play
@@ -122,8 +126,7 @@
               <a class="button button--primary" href="blank.html">Заказать</a>
             </li>
             <li class="feature-item">
-              <h3>Презентации</h3>
-              <a href="blank.html">
+              <a class="feature-img" href="blank.html">
                 <img
                   src="img/illustration-31.png"
                   width="300px"
@@ -131,6 +134,7 @@
                   alt=""
                 />
               </a>
+              <h3>Презентации</h3>
               <p class="text-16">
                 Вы даже не подозреваете,<br />
                 насколько вы изумительны!
@@ -169,33 +173,28 @@
             </ul>
           </div>
           <div class="about-us-column2">
-              <img src="img/nerds-illustration1.png" alt="Логотип «Нёрдс»" />
-              <a href="blank.html"> </a>
-              <h3>С 2004 года Любим точность во всем:</h3>
-              <ul class="quality-list">
-                <li class="quality-item">
-                  <p class="text-16">
-                    146%<br />
-                    Уровень самоотдачи
-                  </p>
-                </li>
-                <li class="quality-item">
-                  <p class="text-16">
-                    100%<br />
-                    Соблюдение сроков
-                  </p>
-                </li>
-                <li class="quality-item">
-                  <p class="text-16">
-                    50%<br />
-                    Минимальная предоплата
-                  </p>
-                </li>
-              </ul>
+            <img src="img/nerds-illustration1.png" alt="Логотип «Нёрдс»" />
+            <a href="blank.html"> </a>
+            <h3>С 2004 года Любим точность во всем:</h3>
+            <ul class="quality-list">
+              <li class="quality-item">
+                <p class="text-16">Уровень самоотдачи</p>
+                <span>146<sup>%</sup></span>
+              </li>
+              <li class="quality-item">
+                <p class="text-16">Соблюдение сроков</p>
+                <span>100<sup>%</sup></span>
+              </li>
+              <li class="quality-item">
+                <p class="text-16">Минимальная предоплата</p>
+
+                <span>50<sup>%</sup></span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section>
+      <section class="friends">
         <div class="container">
           <h2 class="hidden">Наши друзья</h2>
           <ul class="friends-list">
@@ -223,25 +222,29 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts-map">
-          <!--Здесь будет карта-->
+        <div class="contacts-info">
+          <div class="container">
+            <div class="contacts-info-panel">
+              <h3>Nёrds Design Studio</h3>
+              <address>
+                1191186, Санкт-Петербург,<br />
+                ул. Б. Конюшенная, д. 19/8 <br />
+              </address>
+              <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+              <button type="button" class="button button--primary">
+                Напишите нам
+              </button>
+            </div>
+          </div>
         </div>
-
-        <div class="container">
-          <h3>Nёrds Design Studio</h3>
-          <address>
-            1191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19/8 <br />
-          </address>
-          <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <button type="button" class="button button--primary">
-            Напишите нам
-          </button>
+        <div class="contacts-map">
+          <!--Здесь карта-->
         </div>
       </section>
     </main>
 
     <footer class="main-footer container">
+
       <section class="footer-social">
         <h2 class="hidden">Мы в соцсетях</h2>
         <ul class="social-list">
@@ -262,6 +265,7 @@
           Скидка 10% для друзей из социальных сетей
         </p>
       </section>
+
     </footer>
     <section class="popup">
       <!--Здесь будет форма попап напишите нам-->
