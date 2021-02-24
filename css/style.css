@@ -147,17 +147,21 @@
   font-size: var(--font-size-basic);
   line-height: var(--line-height-very-large);
   text-transform: uppercase;
+  flex-basis: 50%;
+
 }
 
 .navigate-list {
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -22.5px;
 }
 
 .navigate-item {
   list-style-type: none;
-  margin-right: 45px;
+  margin: 0 22.5px;
 }
 
 .navigate-item a {
