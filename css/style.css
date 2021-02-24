@@ -156,12 +156,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 -22.5px;
+  margin: 0 -23px;
 }
 
 .navigate-item {
   list-style-type: none;
-  margin: 0 22.5px;
+  margin: 0 23px;
 }
 
 .navigate-item a {
@@ -226,15 +226,7 @@
   text-transform: uppercase;
 }
 
-.main-header h3 {
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-very-big);
-  line-height: var(--line-height-very-big);
-  color: var(--black-basic);
-  text-align: center;
-  padding-bottom: 108px;
-  margin: 0;
-}
+
 
 .features-list {
   padding-left: 0px;
@@ -442,7 +434,7 @@
   background-image: url("../img/map.jpg");
   background-position: 50% 50%;
   background-repeat: repeat-x;
-  height: 416px;
+  height: 415px;
 }
 
 .contacts-info {
@@ -562,6 +554,26 @@
   cursor: pointer;
 }
 
+
+.inside-header-caption {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-very-big);
+  line-height: var(--line-height-very-big);
+  color: var(--black-basic);
+  margin: 0;
+  flex-basis: 70%;
+  text-align: center;
+}
+
+.inside-header-caption-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 78px;
+  padding-bottom: 108px;
+
+}
 .content-catalog {
   display: grid;
   grid-template-columns: 400px 400px 360px;
