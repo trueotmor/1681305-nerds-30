@@ -740,6 +740,11 @@
   visibility: visible;
 }
 
+.template-item:hover .hat-template-item {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
 .template-item h3 {
   text-transform: uppercase;
 }
