@@ -215,7 +215,6 @@
 }
 
 .features {
-
 }
 
 .features h3 {
@@ -271,7 +270,6 @@
   display: grid;
   grid-template-columns: auto min-content;
   column-gap: 50px;
-
 }
 .slogan {
   font-size: var(--font-size-big);
@@ -674,16 +672,12 @@
   border: var(--dimgray-basic) solid 1px;
 }
 
-
-
 .hat-template-item {
   display: block;
   width: 100%;
   height: 40px;
   background-color: var(--very-dark-gray);
   opacity: 0.12;
-
-
 }
 
 .hat-template-item-bullet1 {
@@ -695,7 +689,6 @@
   height: 14px;
   background-color: var(--white-basic);
   border-radius: 50%;
-
 }
 
 .hat-template-item-bullet2 {
@@ -707,7 +700,6 @@
   height: 14px;
   background-color: var(--white-basic);
   border-radius: 50%;
-
 }
 
 .hat-template-item-bullet3 {
@@ -719,10 +711,7 @@
   height: 14px;
   background-color: var(--white-basic);
   border-radius: 50%;
-
 }
-
-
 
 .template-item a {
   display: block;
