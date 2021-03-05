@@ -541,7 +541,7 @@ fieldset {
   margin-bottom: 38px;
 }
 
-.contacts a {
+.phone-number {
   text-decoration: none;
   font-size: var(--font-size-basic);
   line-height: var(--line-height-basic);
@@ -593,6 +593,7 @@ fieldset {
   font-size: 0;
   margin: -6px;
   padding: 0;
+  display: flex;
 }
 
 .social-icon {
@@ -620,50 +621,30 @@ fieldset {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.social-icon--vk a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-icon a:active .social-icon--vk-image {
   fill: var(--red-active-text);
 }
 
-.social-icon--vk a {
-  position: relative;
-}
-
-.social-icon--vk-image {
-  position: absolute;
-  top: 50%;
-  margin-top: -7px;
-  left: 50%;
-  margin-left: -13px;
-}
-
 .social-icon--fb a {
-  position: relative;
-}
-
-.social-icon--fb-image {
-  position: absolute;
-  top: 50%;
-  margin-top: -11px;
-  left: 50%;
-  margin-left: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icon a:active .social-icon--fb-image {
   fill: var(--red-active-text);
 }
 
-
-
 .social-icon--insta a {
-  position: relative;
-}
-
-.social-icon--insta-image {
-  position: absolute;
-  top: 50%;
-  margin-top: -11px;
-  left: 50%;
-  margin-left: -11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icon a:active .social-icon--insta-image {
@@ -689,7 +670,60 @@ fieldset {
   margin-bottom: 0;
 }
 
+.popup-position {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-padding {
+  padding: 63px 100px 84px;
+}
+
 .popup {
+  position: relative;
+  background-color: var(--white-basic);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  min-width: 960px;
+  z-index: 1;
+}
+
+#popup:target {
+  display: flex;
+}
+
+.popup-form label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: var(--font-size-basic);
+  line-height: var(--line-height-basic);
+  font-weight: var(--font-weight-bold);
+}
+
+.popup-form input {
+  height: 50px;
+  border: 2px solid var(--border-gray-basic);
+  border-radius: 3px;
+  padding-left: 16px;
+  width: 100%;
+  margin-bottom: 34px;
+  box-sizing: border-box;
+}
+
+.popup-form textarea {
+  border: 2px solid var(--border-gray-basic);
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 47px;
+  box-sizing: border-box;
+  vertical-align: top;
+  min-height: 118px;
 }
 
 .popup-name {
@@ -698,12 +732,53 @@ fieldset {
   line-height: var(--line-height-bigger);
 }
 
-.popup-form {
+.popup-form button {
+  padding: 1em 84px;
 }
 
-.popup-item {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-basic);
+.popup-form fieldset {
+  display: flex;
+  margin: 0 -20px;
+}
+
+.popup-form h2 {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.popup-closed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+
+.writeus-name-field {
+  display: inline-block;
+  margin: 0 20px;
+  width: 50%;
+}
+
+.writeus-email-field {
+  margin: 0 20px;
+  display: inline-block;
+  width: 50%;
+}
+
+.writeus-text-field {
+  display: inline-block;
+
+  width: 100%;
+}
+
+.writeus-text {
+  padding: 16px;
+  margin-bottom: 47px;
+  width: 100%;
   line-height: var(--line-height-basic);
 }
 
@@ -711,13 +786,31 @@ fieldset {
 }
 
 .close {
-  background-image: url("../img/close-cross.svg");
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 21px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: 90px;
+  top: 78px;
+  outline: none;
+}
+
+.close-form-button:hover {
+  fill-opacity: 1;
+}
+
+.close-form-button:active {
+  fill-opacity: 0.1;
+}
+
+.close-popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: 0;
 }
 
 .inside-header-caption {
@@ -1025,25 +1118,3 @@ fieldset {
   color: var(--not-very-dark-gray);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-
-/* .button {
-  text-decoration: none;
-  color: var(--white-basic);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-basic);
-  line-height: var(--line-height-basic);
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  height: 3.125em;
-  box-sizing: border-box;
-  padding: 1em 2.5em;
-  border-radius: 0.25em;
-  cursor: pointer;
-}
-
-.button--primary {
-  background-color: var(--red-basic);
-  border: none;
-} */
