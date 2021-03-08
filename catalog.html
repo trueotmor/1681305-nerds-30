@@ -64,20 +64,20 @@
       <main>
       <section class="container content-catalog">
         <section class="type-filter">
-          <h2 class="hidden">Фильтр товаров</h2>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
             <fieldset>
               <legend class="type-catalog-filter">Сортировать:</legend>
               <ul class="sort-list">
                 <li class="sort-item">
-                  <input type="radio" name="sort" id="sort-price" value="by-price" checked>
+                  <input class="visually-hidden" type="radio" name="sort" id="sort-price" value="by-price" checked>
                   <label for="sort-price">По цене</label>
                 </li>
                 <li class="sort-item">
-                  <input type="radio" name="sort" id="sort-type" value="by-type">
+                  <input class="visually-hidden" type="radio" name="sort" id="sort-type" value="by-type">
                   <label for="sort-type">По типу</label>
                 </li>
                 <li class="sort-item">
-                  <input type="radio" name="sort" id="sort-name" value="by-name">
+                  <input class="visually-hidden" type="radio" name="sort" id="sort-name" value="by-name">
                   <label for="sort-name">По названию</label>
                 </li>
               </ul>
@@ -85,11 +85,11 @@
           <fieldset>
             <ul class="rate">
               <li>
-                <input type="radio" name="rate" id="up-down" value="by-price" checked>
+                <input class="visually-hidden up-down" type="radio" name="rate" id="up-down" value="by-price" checked>
                 <label for="up-down"></label>
               </li>
               <li>
-                <input type="radio" name="rate" id="down-up" value="by-type">
+                <input class="visually-hidden down-up" type="radio" name="rate" id="down-up" value="by-type">
                 <label for="down-up"></label>
               </li>
             </ul>
@@ -99,46 +99,62 @@
           <form method="GET" action="https://echo.htmlacademy.ru">
             <fieldset class="catalog-filter--value">
               <legend class="type-catalog-filter">Стоимость:</legend>
-              <!--Здесь будет возможность выбрать стоимoсть-->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0" step="10">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000" step="10">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-filter--grid">
               <legend class="type-catalog-filter">Сетка:</legend>
               <ul class="grid-list">
                 <li class="grid-item">
-                  <input type="radio" name="grid" id="filter-adaptive" value="adaptive" checked>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-adaptive" value="adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="grid-item">
-                  <input type="radio" name="grid" id="filter-fixed" value="fixed">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-fixed" value="fixed" disabled>
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="grid-item">
-                  <input type="radio" name="grid" id="filter-rubber" value="rubber">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-rubber" value="rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter--hang">
               <legend class="type-catalog-filter">Особенности:</legend>
-              <ul class="filter-features">
-                <li>
-                  <input type="checkbox" name="slider" id="filter-slider" checked>
+              <ul class="filter-features-list">
+                <li class="filter-features-item">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="blok-preimushestv" id="filter-blok-preimushestv">
+                <li class="filter-features-item">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="blok-preimushestv" id="filter-blok-preimushestv">
                   <label for="filter-blok-preimushestv">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="novosti" id="filter-novosti" checked>
+                <li class="filter-features-item">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="novosti" id="filter-novosti" checked>
                   <label for="filter-novosti">Новости</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="gallery" id="filter-gallery">
+                <li class="filter-features-item">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">Галлерея</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="korzina" id="filter-korzina">
+                <li class="filter-features-item">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="korzina" id="filter-korzina">
                   <label for="filter-korzina">Корзина</label>
                 </li>
               </ul>
@@ -152,7 +168,7 @@
 
               <ul class="template-list">
                 <li class="template-item">
-                  <div class="hat-template-item"> <!--Можно сделать кнопочки для переключения изображения шаблонов-->
+                  <div class="hat-template-item"> <!--Можно сделать кнопочки (слайдер) для переключения изображения шаблонов-->
                     <div class="hat-template-item-bullet1"></div>
                     <div class="hat-template-item-bullet2"></div>
                     <div class="hat-template-item-bullet3"></div>
@@ -247,7 +263,7 @@
         <section class="catalog-pagination">
               <ul class="catalog-page-list">
                 <li class="catalog-page">
-                  <a class="button button--primary button-catalog-page">1</a>
+                  <a class="button button--primary button-catalog-page catalog-page-active">1</a>
                 </li>
                 <li class="catalog-page">
                   <a href="#" class="button button--primary button-catalog-page">2</a>
@@ -286,7 +302,7 @@
       </main>
       <footer class="main-footer container">
         <section class="footer-social">
-          <h2 class="hidden">Мы в соцсетях</h2>
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social-list">
             <li class="social-icon social-icon--vk">
               <a href="#">
