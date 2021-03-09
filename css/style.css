@@ -836,7 +836,7 @@ fieldset {
 .content-catalog {
   display: grid;
   grid-template-columns: 400px 400px 360px;
-  grid-template-rows: 155px auto auto;
+  grid-template-rows: auto auto auto;
   padding-bottom: 60px;
 }
 
@@ -955,8 +955,8 @@ fieldset {
 .type-filter {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
-  display: flex;
   padding-top: 55px;
+  padding-bottom: 48px;
 }
 
 .catalog-templates {
@@ -982,11 +982,19 @@ fieldset {
   line-height: var(--line-height-very-large);
   text-transform: uppercase;
   font-weight: var(--font-weight-bold);
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.type-filter fieldset {
+.type-filter-wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-list-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sort-list {
@@ -995,6 +1003,7 @@ fieldset {
   text-transform: uppercase;
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .sort-list label {
@@ -1003,34 +1012,36 @@ fieldset {
   cursor: pointer;
 }
 
-.sort-item input+label {
+.sort-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.sort-item input + label {
   opacity: 0.3;
 }
 
-.sort-item input+label:hover {
+.sort-item input + label:hover {
   opacity: 0.6;
 }
 
-.sort-item input:checked +label {
+.sort-item input:checked + label {
   opacity: 1;
 }
 
-
-
 .rate {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
   list-style-type: none;
   padding-left: 0;
+  width: 40px;
+  margin: 0;
+  margin-left: 47px;
 }
 
-.rate .up-down:checked + label::before {
+.rate .up-down + label::before {
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
+  top: -6px;
   width: 0;
   height: 0;
   border-left: 5.5px solid transparent;
@@ -1040,30 +1051,20 @@ fieldset {
   cursor: pointer;
 }
 
-.rate .up-down + label::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 5.5px solid transparent;
-  border-right: 5.5px solid transparent;
-  border-top: 10px solid var(--black-basic);
-  cursor: pointer;
-}
-
-.rate .up-down:checked + label:hover:before {
+.rate .up-down + label:hover:before {
   opacity: 1;
 }
 
-.rate .down-up:checked + label::before {
+.rate .up-down:checked + label::before {
+  border-top: 10px solid var(--black-basic);
+  opacity: 1;
+}
+
+.rate .down-up + label::before {
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  left: 100;
+  top: -6px;
   width: 0;
   height: 0;
   border-left: 5.5px solid transparent;
@@ -1071,29 +1072,17 @@ fieldset {
   border-bottom: 10px solid var(--gray-basic);
   opacity: 0.2;
   cursor: pointer;
-  margin-left: 18px;
+  margin-left: 29px;
 }
 
-.rate .down-up + label::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 100;
-  width: 0;
-  height: 0;
-  border-left: 5.5px solid transparent;
-  border-right: 5.5px solid transparent;
-  border-bottom: 10px solid var(--black-basic);
-  cursor: pointer;
-  margin-left: 18px;
-}
-
-.rate .down-up:checked + label:hover:before {
+.rate .down-up + label:hover:before {
   opacity: 1;
 }
 
-
+.rate .down-up:checked + label::before {
+  border-bottom: 10px solid var(--black-basic);
+  opacity: 1;
+}
 
 .grid-list {
   font-size: var(--font-size-basic);

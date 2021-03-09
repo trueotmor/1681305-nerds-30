@@ -64,36 +64,40 @@
       <main>
       <section class="container content-catalog">
         <section class="type-filter">
+
           <h2 class="visually-hidden">Фильтр товаров</h2>
-            <fieldset>
-              <legend class="type-catalog-filter">Сортировать:</legend>
-              <ul class="sort-list">
-                <li class="sort-item">
-                  <input class="visually-hidden" type="radio" name="sort" id="sort-price" value="by-price" checked>
-                  <label for="sort-price">По цене</label>
+            <div class="type-filter-wrap">
+
+                <h3 class="type-catalog-filter">Сортировать:</h3>
+                <div class="sort-list-wrap">
+                <ul class="sort-list">
+                  <li class="sort-item">
+                    <input class="visually-hidden" type="radio" name="sort" id="sort-price" value="by-price" checked>
+                    <label for="sort-price">По цене</label>
+                  </li>
+                  <li class="sort-item">
+                    <input class="visually-hidden" type="radio" name="sort" id="sort-type" value="by-type">
+                    <label for="sort-type">По типу</label>
+                  </li>
+                  <li class="sort-item">
+                    <input class="visually-hidden" type="radio" name="sort" id="sort-name" value="by-name">
+                    <label for="sort-name">По названию</label>
+                  </li>
+                </ul>
+
+              <ul class="rate">
+                <li>
+                  <input class="visually-hidden up-down" type="radio" name="rate" id="up-down" value="by-price" checked>
+                  <label for="up-down"></label>
                 </li>
-                <li class="sort-item">
-                  <input class="visually-hidden" type="radio" name="sort" id="sort-type" value="by-type">
-                  <label for="sort-type">По типу</label>
-                </li>
-                <li class="sort-item">
-                  <input class="visually-hidden" type="radio" name="sort" id="sort-name" value="by-name">
-                  <label for="sort-name">По названию</label>
+                <li>
+                  <input class="visually-hidden down-up" type="radio" name="rate" id="down-up" value="by-type">
+                  <label for="down-up"></label>
                 </li>
               </ul>
-            </fieldset>
-          <fieldset>
-            <ul class="rate">
-              <li>
-                <input class="visually-hidden up-down" type="radio" name="rate" id="up-down" value="by-price" checked>
-                <label for="up-down"></label>
-              </li>
-              <li>
-                <input class="visually-hidden down-up" type="radio" name="rate" id="down-up" value="by-type">
-                <label for="down-up"></label>
-              </li>
-            </ul>
-          </fieldset>
+
+              </div>
+            </div>
         </section>
         <section class="catalog-filter">
           <form method="GET" action="https://echo.htmlacademy.ru">
@@ -163,7 +167,7 @@
           </form>
         </section>
         <section class="catalog-templates">
-          <h2 class="hidden">Список готовых шаблонов</h2>
+          <h2 class="visually-hidden">Список готовых шаблонов</h2>
           <!-- Здесь будет реализована возможность сортировки результата фильтра товаров?-->
 
               <ul class="template-list">
