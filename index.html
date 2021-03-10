@@ -37,7 +37,7 @@
     <div>
       <header class="main-header">
         <div class="container">
-          <a class="main-logo">
+          <a class="main-logo main-logo-index">
             <svg
               class="main-logo-image"
               width="160"
@@ -73,10 +73,10 @@
       </header>
       <section class="advantages">
         <div class="container">
-          <div class="advantages-slider">
-            <div class="advantages-slide">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantages-slider">
+            <li class="advantages-slide slide slide-current">
               <div class="advantages-column1">
-                <h2 class="visually-hidden">Преимущества</h2>
                 <h3>
                   Долго, дорого,<br />
                   скурпулезно
@@ -89,15 +89,42 @@
                   >Узнать больше</a
                 >
               </div>
-              <div class="advantages-column2">
-                <img
-                  src="img/slide1.png"
-                  width="760px"
-                  height="431px"
-                  alt="слайд1"
-                />
+            </li>
+            <li class="advantages-slide slide">
+              <div class="advantages-column1">
+                <h3>
+                  Любим математику<br />
+                  как никто другой
+                </h3>
+                <p class="text-16">
+                  Никакого креатива, только математические формулы<br />
+                  для расчета идеальных пропорций
+                </p>
+                <a class="button button--primary" href="blank.html"
+                  >Узнать больше</a
+                >
               </div>
-            </div>
+            </li>
+            <li class="advantages-slide slide">
+              <div class="advantages-column1">
+                <h3>
+                  Только ночь,<br />
+                  только хардкор
+                </h3>
+                <p class="text-16">
+                  Работать днем, как все? Мы против этого.<br />
+                  Ближе к полуночи работа только начинается.
+                </p>
+                <a class="button button--primary" href="blank.html"
+                  >Узнать больше</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button class="current" type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
           </div>
         </div>
       </section>
@@ -207,7 +234,6 @@
               </li>
               <li class="quality-item">
                 <p class="text-16">Минимальная предоплата</p>
-
                 <span>50<sup>%</sup></span>
               </li>
             </ul>
@@ -365,7 +391,6 @@
               <textarea
                 class="writeus-text"
                 id="writeus-text"
-
                 name="text"
                 placeholder="В свободной форме"
               ></textarea>

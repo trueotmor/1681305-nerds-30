@@ -167,13 +167,23 @@ fieldset {
   padding-bottom: 0;
 }
 
+
+
 .main-logo-image {
   fill: var(--black-basic);
 }
 
+.main-logo-image:hover {
+  opacity: 0.7;
+}
+
 .main-logo-image:active {
-  fill: var(--gray-basic);
+  opacity: 0.3;
   transition: all 0.3s;
+}
+
+.main-logo-index {
+  pointer-events: none;
 }
 
 .navigate {
@@ -259,18 +269,51 @@ fieldset {
   margin: 0;
 }
 
+.advantages .container {
+  position: relative;
+
+}
+
+.advantages-slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .advantages-column1 {
   padding: 20px 0;
 }
+
+
 
 .advantages-slide {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background-color: var(--dimgray-basic);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  height: 431px;
+  }
+
+.advantages-slide:nth-child(1) {
+  background-image: url("../img/slide1.png");
 }
 
-.advantages-slide img {
-  vertical-align: top;
+.advantages-slide:nth-child(2) {
+  background-image: url("../img/slide2.png");
+}
+
+.advantages-slide:nth-child(3) {
+  background-image: url("../img/slide3.png");
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
 }
 
 .advantages h3 {
@@ -284,6 +327,40 @@ fieldset {
 
 .advantages-column1 .text-16 {
   margin-bottom: 38px;
+}
+
+.slider-controls {
+position: absolute;
+bottom: 96px;
+left: 0;
+right: 0;
+display: flex;
+justify-content: center;
+margin: -8.5px;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white-basic);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 8.5px;
+  position: relative;
+}
+
+.slider-controls .current::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--not-very-dark-gray);
+
 }
 
 .features {
