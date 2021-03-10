@@ -313,7 +313,7 @@ fieldset {
 }
 
 .slide-current {
-  display: block;
+  display: flex;
 }
 
 .advantages h3 {
