@@ -332,11 +332,12 @@ fieldset {
 .slider-controls {
 position: absolute;
 bottom: 96px;
-left: 0;
-right: 0;
+left: 400px;
+right: 400px;
 display: flex;
 justify-content: center;
 margin: -8.5px;
+
 }
 
 .slider-controls button {
