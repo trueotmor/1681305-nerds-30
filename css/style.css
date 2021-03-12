@@ -167,8 +167,6 @@ fieldset {
   padding-bottom: 0;
 }
 
-
-
 .main-logo-image {
   fill: var(--black-basic);
 }
@@ -271,7 +269,6 @@ fieldset {
 
 .advantages .container {
   position: relative;
-
 }
 
 .advantages-slider {
@@ -284,8 +281,6 @@ fieldset {
   padding: 20px 0;
 }
 
-
-
 .advantages-slide {
   display: flex;
   flex-wrap: wrap;
@@ -294,7 +289,7 @@ fieldset {
   background-position: 100%;
   background-repeat: no-repeat;
   height: 431px;
-  }
+}
 
 .advantages-slide:nth-child(1) {
   background-image: url("../img/slide1.png");
@@ -330,14 +325,13 @@ fieldset {
 }
 
 .slider-controls {
-position: absolute;
-bottom: 96px;
-left: 400px;
-right: 400px;
-display: flex;
-justify-content: center;
-margin: -8.5px;
-
+  position: absolute;
+  bottom: 96px;
+  left: 400px;
+  right: 400px;
+  display: flex;
+  justify-content: center;
+  margin: -8.5px;
 }
 
 .slider-controls button {
@@ -361,10 +355,6 @@ margin: -8.5px;
   width: 4px;
   height: 4px;
   border: 2px solid var(--not-very-dark-gray);
-
-}
-
-.features {
 }
 
 .features h3 {
@@ -862,9 +852,6 @@ margin: -8.5px;
   line-height: var(--line-height-basic);
 }
 
-.submit {
-}
-
 .close {
   border: none;
   background-color: transparent;
@@ -1282,9 +1269,6 @@ margin: -8.5px;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.template-catalog-grid {
-}
-
 .template-list {
   list-style-type: none;
   padding: 0;
@@ -1348,7 +1332,6 @@ margin: -8.5px;
 }
 
 .template-item a img {
-  vertical-align: bottom;
   display: block;
   background-color: var(--dimgray-basic);
 }
@@ -1419,12 +1402,6 @@ margin: -8.5px;
   display: inline-flex;
   padding: 0;
   margin: -6px;
-}
-
-.catalog-page {
-}
-
-.catalog-next-page {
 }
 
 .button-catalog-page {
