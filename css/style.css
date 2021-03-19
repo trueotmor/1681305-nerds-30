@@ -164,10 +164,10 @@ fieldset {
 }
 
 .main-logo {
-  padding-bottom: 0;
 }
 
 .main-logo-image {
+  display: block;
   fill: var(--black-basic);
 }
 
@@ -193,17 +193,18 @@ fieldset {
 }
 
 .navigate-list {
-  padding-left: 0;
+  padding-inline-start: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 -23px;
+  margin: 0;
+  margin-right: 45px;
 }
 
 .navigate-item {
   list-style-type: none;
   margin: 0 23px;
-  padding: 13px 0;
+  padding: 13px 0 0 0;
 }
 .navigate-item a {
   text-decoration: none;
@@ -220,7 +221,12 @@ fieldset {
 }
 
 .catalog-select {
-  box-shadow: 0 2px var(--red-basic);
+
+  box-shadow: 0 9px var(--dimgray-basic), 0 11px var(--red-basic);
+}
+
+.cart-wrap {
+  padding-top: 15px;
 }
 
 .cart {
@@ -236,6 +242,7 @@ fieldset {
 .cart::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
@@ -253,8 +260,8 @@ fieldset {
 }
 
 .cart-select {
-  padding: 13px 0;
-  box-shadow: 0 2px var(--red-basic);
+  padding: 13px 0 0 0;
+  box-shadow: 0 9px var(--dimgray-basic), 0 11px var(--red-basic);
 }
 
 .container {
@@ -278,7 +285,7 @@ fieldset {
 }
 
 .advantages-column1 {
-  padding: 20px 0;
+  padding: 13px 0;
 }
 
 .advantages-slide {
@@ -291,8 +298,13 @@ fieldset {
   height: 431px;
 }
 
+.slide-button {
+  padding: 1em 3.5em;
+}
+
 .advantages-slide:nth-child(1) {
   background-image: url("../img/slide1.png");
+  background-position: right;
 }
 
 .advantages-slide:nth-child(2) {
@@ -471,7 +483,7 @@ fieldset {
 .plus-item {
   display: flex;
   list-style-type: none;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .plus-item:last-child,
@@ -514,7 +526,7 @@ fieldset {
 }
 
 .about-us-column2 img {
-  padding-bottom: 36px;
+  padding-bottom: 33px;
 }
 
 .about-us-column2 h3 {
@@ -529,6 +541,7 @@ fieldset {
 
 .about-us-column2 .text-16 {
   margin-bottom: 0;
+  line-height: var(--line-height-basic);
 }
 
 .friends {
@@ -538,6 +551,7 @@ fieldset {
 .friends-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 180px;
   padding: 0;
   margin: 0;
@@ -552,7 +566,12 @@ fieldset {
   flex-basis: 25%;
   list-style-type: none;
   position: relative;
-  text-align: center;
+}
+
+.friend-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .friend-item a {
@@ -609,8 +628,7 @@ fieldset {
   text-decoration: none;
   font-size: var(--font-size-basic);
   line-height: var(--line-height-basic);
-  display: flex;
-  flex-wrap: wrap;
+
   color: var(--dark-gray);
   margin-top: 0;
   margin-bottom: 38px;
@@ -620,15 +638,11 @@ fieldset {
   text-decoration: none;
   font-size: var(--font-size-basic);
   line-height: var(--line-height-basic);
-  display: flex;
-  align-items: center;
   color: var(--dark-gray);
 }
 
 .contacts-map {
-  /*background-image: url("../img/map.jpg");*/
   background-color: var(--white-basic);
-  /*background-position: 50% 50%;*/
   background-repeat: repeat-x;
   height: 415px;
 }
@@ -636,8 +650,7 @@ fieldset {
 #map {
   width: 100%;
   height: 415px;
-
-
+  overflow: hidden;
 }
 
 .contacts-info {
@@ -658,6 +671,10 @@ fieldset {
   padding: 50px;
   background-color: var(--white-basic);
   z-index: 1;
+}
+
+.writeus-button {
+  padding: 1em 2.8em;
 }
 
 .main-footer {
@@ -681,7 +698,7 @@ fieldset {
 }
 
 .social-icon {
-  display: inline-block;
+  display: block;
 }
 
 .social-list .social-icon + .social-icon {
@@ -739,7 +756,8 @@ fieldset {
 }
 
 .footer-text {
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 142px;
 }
 .text-footer-friendship {
   font-size: var(--font-size-very-large);
@@ -778,7 +796,6 @@ fieldset {
   background-color: var(--white-basic);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   min-width: 960px;
-
 }
 
 #popup:target {
@@ -844,6 +861,7 @@ fieldset {
 
 .writeus-name-field {
   display: inline-block;
+  vertical-align: top;
   margin: 0 20px;
   width: 50%;
 }
@@ -851,12 +869,13 @@ fieldset {
 .writeus-email-field {
   margin: 0 20px;
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 }
 
 .writeus-text-field {
   display: inline-block;
-
+  vertical-align: top;
   width: 100%;
 }
 
@@ -892,7 +911,6 @@ fieldset {
   width: 100%;
   height: 100%;
   cursor: default;
-
 }
 
 .inside-header-caption {
@@ -927,7 +945,7 @@ fieldset {
 }
 
 .catalog-filter--value {
-  padding-bottom: 54px;
+  padding-bottom: 50px;
   margin: 0;
   border: none;
 }
@@ -1012,7 +1030,7 @@ fieldset {
 }
 
 .catalog-filter--grid {
-  padding-bottom: 43px;
+  padding-bottom: 48px;
 }
 
 .catalog-filter--grid legend {
@@ -1024,7 +1042,7 @@ fieldset {
 }
 
 .catalog-filter--hang legend {
-  margin-bottom: 14px;
+  margin-bottom: 17px;
 }
 
 .type-filter {
@@ -1174,7 +1192,7 @@ fieldset {
 }
 
 .grid-item:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .grid-item {
@@ -1227,7 +1245,7 @@ fieldset {
 }
 
 .filter-features-item:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .filter-features-item {
@@ -1437,8 +1455,7 @@ fieldset {
 
 .button-catalog-page {
   color: var(--black-basic);
-
-  padding: 1.5em;
+  padding: 20px;
   background-color: var(--dimgray-basic);
 }
 
@@ -1455,7 +1472,7 @@ fieldset {
 
 .button-catalog-page-next {
   color: var(--black-basic);
-
+  padding: 17px 78px;
   background-color: var(--dimgray-basic);
 }
 
@@ -1473,8 +1490,6 @@ fieldset {
 .catalog-page-active {
   background-color: var(--white-basic);
   border: solid 3px var(--dimgray-hover);
-  padding: 21px;
+  padding: 18px;
   pointer-events: none;
 }
-
-

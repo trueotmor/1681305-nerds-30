@@ -1,7 +1,3 @@
-
-
-
-
     ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.939257, 30.321617],
@@ -9,26 +5,14 @@
         }, {
             searchControlProvider: 'yandex#search'
         }),
-
-
-        myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
-            hintContent: 'Не Краснодар конечно, увы.'/*,
-            balloonContent: ''*/
+        myPlacemark = new ymaps.Placemark([59.938784, 30.323250], {
+            hintContent: 'Не Краснодар конечно, увы.'
         }, {
-            // Опции.
             iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: '../img/map-marker.png',
-            // Размеры метки.
+            iconImageHref: 'img/map-marker.png',
             iconImageSize: [231, 190],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
             iconImageOffset: [-60, -200]
         });
-
-
-
     myMap.geoObjects
-        .add(myPlacemark)
-        /*.add(myPlacemarkWithContent)*/;
+        .add(myPlacemark);
 });
